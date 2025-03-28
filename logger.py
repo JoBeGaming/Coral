@@ -22,7 +22,7 @@ def get_path() -> str:
   
 class logger():
   
-  def __init__(self, newPath: str=None) -> None: 
+  def __init__(self, newPath: str | None=None) -> None: 
     """Initiate a new log at `logs/`, except another path is given"""
     if newPath is None:
       self.LOG_PATH = rf"logs/{get_path()}"
@@ -75,6 +75,6 @@ class logger():
   def error(self, msg: str) -> None:
     self.newEntry(msg, level="Error")
     
-  def fatal(self, error: object, msg: str) -> None:
+  def fatal(self, error: Exception, msg: str) -> None:
     self.newEntry(f"{error}: {msg}", "Fatal")
     raise error
