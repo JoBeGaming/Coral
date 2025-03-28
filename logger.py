@@ -75,6 +75,6 @@ class logger():
   def error(self, msg: str) -> None:
     self.newEntry(msg, level="Error")
     
-  def fatal(self, error: Exception, msg: str | None=None) -> None:
+  def fatal(self, error: Exception, msg: str | None="") -> None:
     self.newEntry(f"{error}: {msg}", "Fatal")
     raise error
