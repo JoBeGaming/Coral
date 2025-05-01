@@ -23,3 +23,5 @@ Flags will have the prefix `~` bound to them, unless specified otherwise with th
 * `noerror`: Errors wont get shown to the User, unless they are fatal.
 
 Multiple flags can be used together, by doing `~[flag], ~[flag]`. 
+
+*This project should in no case be affiliated with any trademarked usage of the word 'Coral'.*
