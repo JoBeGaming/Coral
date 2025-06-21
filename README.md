@@ -3,13 +3,13 @@ Generic 3-Operand Minecraft CPU Environment.
 
 ## Assembler
 
-*Note: Before you try to assemble any code, please configure the* `assembler_tokens.txt` *file.*
+> Note: Before you try to assemble any code, please configure the`assembler_tokens.txt` file.
 
 To run the Assembler, run `Coral.py` and input `asm [file_name].[file_extension]` and optionally add `~[flag]` at the end.
 
 ## Emulator
 
-*Note: Before you try to run / emulate any code, please configure the* `emulator_tokens.txt` *file, and add all functionality into the* `emulator_func.py` *file.*
+> Note: Before you try to run / emulate any code, please configure the `emulator_tokens.txt` file, and add all functionality into the `emulator_func.py` file.
 
 To run the Assembler, run `Coral.py` and input `emu [file_name].[file_extension]` and optionally add `~[flag` at the end.
 
