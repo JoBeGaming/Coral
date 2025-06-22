@@ -1,8 +1,14 @@
-# Coral.py
+# Coral.py, the main entry point.
+
+# (c) JoBe, 2025
+
+
 from Assembler import entry as A_entry
 from Emulator import entry as E_entry
 from Constants import FILE_EXTENSION
+
 from logger import *
+
 
 log = logger()
 
