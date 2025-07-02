@@ -27,4 +27,6 @@ Flags will have the prefix `~` bound to them, unless specified otherwise with th
 
 Multiple flags can be used together, by doing something like `~[flag1], ~[flag2]`. 
 
-*This project should in no case be affiliated with any trademarked usage of the word 'Coral'.*
+---
+
+> *This project should in no case be affiliated with any trademarked usage of the word 'Coral'.*
