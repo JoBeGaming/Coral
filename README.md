@@ -20,10 +20,10 @@ To run the Assembler, run `Coral.py` and input `emu [file_name].[file_extension]
 
 Flags will have the prefix `~` bound to them, unless specified otherwise with the `FLAG_PREFIX` constant in `Coral.py`. <!-- Standart is '--' i suppose-->
 
-* `nolog`: Actions, Errors and Similar wont be logged.
-* `noshow`: Memory wont be shown durring runtime, and will only show once the Emulation is complete.
-* `nowarn`: Warning wont get shown to the User. 
-* `noerror`: Errors wont get shown to the User, **unless they are fatal**.
+* `nolog`: Actions, Errors and Similar won't be logged.
+* `noshow`: Memory won't be shown during runtime, and will only show once the Emulation is complete.
+* `nowarn`: Warnings won't get shown to the User. 
+* `noerror`: Errors won't get shown to the              User, **unless they are fatal**.
 
 Multiple flags can be used together, by doing something like `~[flag1], ~[flag2]`. 
 
