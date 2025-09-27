@@ -1,7 +1,7 @@
 # Change these as needed
 
-FLAG_PREFIX = "~"
-FLAG_SEPARATOR = ","
+FLAG_PREFIX: str = "~"
+FLAG_SEPARATOR: str = ","
 
 # No . needed
-FILE_EXTENSION = "txt" 
+FILE_EXTENSION: str = "txt"

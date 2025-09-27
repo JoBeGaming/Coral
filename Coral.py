@@ -24,11 +24,11 @@ while True:
     else: 
         log.error("Input is not recognized as valid input, trying again")
         continue
-  
+
     file_name = f"{inp.split('.')[0]}.{FILE_EXTENSION}"
     inp.removeprefix(f"{file_name} ")
     log.debug(f"Input got converted to {inp}, with file extension {FILE_EXTENSION} being used")
-  
+
     flags = inp
     log.debug(f"Using {flags}")
 
