@@ -9,7 +9,7 @@ from pathlib import Path
 from typing import Literal
 
 
-class logError(Exception):
+class LoggingError(Exception):
     """Base Class for all logging related Errors."""
 
 def get_path() -> str:
@@ -17,7 +17,7 @@ def get_path() -> str:
     try:
         with open(f"log_{ct}.log", "r", errors="strict") as file: 
             file.close()
-           return get_path()
+            return get_path()
     except FileNotFoundError:
         return f"latest.log"
     return f"log_{ct}.log"
@@ -30,10 +30,10 @@ class logger():
         Initiate a new log at `logs/`, except another path is given.
         """
 
-        if newPath is None:
+        if new_path is None:
             self.LOG_PATH = rf"logs/{get_path()}"
         else: 
-            self.LOG_PATH = f"{newPath}.log"
+            self.LOG_PATH = f"{new_path}.log"
         with open(self.LOG_PATH, "x", errors="strict"):
             pass
         self.new_entry(f"Initiated file as {self.LOG_PATH}", "Info")
@@ -58,7 +58,7 @@ class logger():
         try:
             return self.LOG_PATH
         except NameError: 
-            raise logError
+            raise LogError("LOG_PATH is unavailable. Did it get deleted?")
 
     def del_all(self) -> None:
         """
